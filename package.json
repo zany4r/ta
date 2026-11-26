@@ -1,0 +1,64 @@
+{
+  "name": "translate-anything",
+  "version": "1.0.0",
+  "description": "Reverse engineer any software app, binary, or console/Atari game ROM � and translate it into any language using the Edge Translator API. One CLI & MCP server.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zany4r/ta.git"
+  },
+  "homepage": "https://github.com/zany4r/ta#readme",
+  "bugs": {
+    "url": "https://github.com/zany4r/ta/issues"
+  },
+  "type": "module",
+  "bin": {
+    "translate-anything": "dist/cli/index.js",
+    "ta": "dist/cli/index.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "bridge",
+    "skills",
+    "README.md",
+    "LICENSE",
+    "mcp.json",
+    "server.json"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -w -p tsconfig.json",
+    "test": "node --test dist/tests/*.test.js",
+    "start:mcp": "node dist/mcp/server.js"
+  },
+  "keywords": [
+    "translate-anything",
+    "reverse-engineering",
+    "rom-hacking",
+    "localization",
+    "i18n",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "edge-translate",
+    "binary-analysis",
+    "atari",
+    "nes",
+    "gba",
+    "electron",
+    "asar"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  }
+}

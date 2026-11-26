@@ -1,0 +1,7 @@
+{
+  "name": "translate-anything",
+  "version": "1.0.0",
+  "description": "Reverse engineer any software app, binary, ISO, or console game ROM and translate it into any language using the Edge Translator API.",
+  "skills": ["./skills/translate-anything"],
+  "mcpServers": "./mcp.json"
+}
